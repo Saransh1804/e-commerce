@@ -1,0 +1,69 @@
+.Footer{
+    display: flex;
+
+    .Left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        p{
+            margin: 20px 0px;
+
+        }
+        .SocialContainer{
+            display: flex;
+
+            .SocialIcon{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                color: white;
+                // background-color: #${(props) => props.color};
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+            }
+        }
+    }
+    .Center{
+        flex: 1;
+        padding: 20px;
+
+        h3{
+            margin-bottom: 30px;
+
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            li{
+                width: 50%;
+                margin-bottom: 10px; 
+            }
+        }
+    }
+
+    .Right{
+        flex: 1;
+        padding: 20px;
+
+        h3{
+            margin-bottom: 30px;
+        }
+        .ContactItem{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+
+        }
+        img{
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+.Cart{
+
+    .Wrapper{
+        padding: 20px;
+
+        .Title{
+            font-weight: 300;
+            text-align: center;
+        }
+        .Top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+
+            button{
+                padding: 10px;
+                font-weight: 600;
+                cursor: pointer;
+                // border: ${(props) => props.type === "filled" && "none"};
+                background-color: transparent;
+                // color: white;
+            }
+            .filledbutton{
+                padding: 10px;
+                font-weight: 600;
+                cursor: pointer;
+                border: none;
+                background-color: black;
+                color: white;
+            }
+            .TopTexts{
+                span{
+                    text-decoration: underline;
+                    cursor: pointer;
+                    margin: 0px 10px;
+                }
+            }
+        }
+        .Bottom{
+            display: flex;
+            justify-content: space-between;
+
+            .Info{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                // background-color: black;
+                
+                .Product{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .ProductDetail{
+                        flex: 2;
+                        display: flex;
+                        img{
+                            width: 200px;
+
+                        }
+
+                        .Details{
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+                            .ProductColor{
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+
+                                // Ye dekhna h ki props kaise lau
+                                // background-color: black;
+                            }
+                        }
+                    }
+                    .PriceDetail{
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .ProductAmountContainer{
+                            
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 20px;
+
+                            .ProductAmount{
+                                font-size: 24px;
+                                margin: 5px;
+
+                            }
+
+                        }
+                        .ProductPrice{
+                            font-size: 30px;
+                            font-weight: 200;
+                        }
+                    }
+                }
+
+                hr{
+                    background-color: #eee;
+                    border: none;
+                    height: 1px;   
+                }
+            }
+
+            .Summary{
+                flex: 1;
+                border: 0.5px solid lightgray;
+                border-radius: 10px;
+                padding: 20px;
+                height: 50vh;
+                
+                h1{
+                    font-weight: 200;
+                }
+                .SummaryItem{
+                    margin: 30px 0px;
+                    display: flex;
+                    justify-content: space-between;
+                    // font-weight: ${(props) => props.type === "total" && "500"};
+                    // font-size: ${(props) => props.type === "total" && "24px"};
+                }
+                .Total{
+                    margin: 30px 0px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: 500;
+                    font-size: 24px;
+                }
+                button{
+                    width: 100%;
+                    padding: 10px;
+                    background-color: black;
+                    color: white;
+                    font-weight: 600;  
+                    cursor: pointer;
+                }
+
+            }
+
+        }
+    }
+}
